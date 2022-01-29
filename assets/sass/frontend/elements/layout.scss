@@ -1,2 +1,7 @@
 @import '_mixin';
 
+#page,
+.wrapper,
+#masthead {
+    @include default_width;
+}

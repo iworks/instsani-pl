@@ -17,11 +17,6 @@ function instsani_pl_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
-	// Adds a class of no-sidebar when there is no sidebar present.
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-		$classes[] = 'no-sidebar';
-	}
-
 	return $classes;
 }
 add_filter( 'body_class', 'instsani_pl_body_classes' );
@@ -35,3 +30,27 @@ function instsani_pl_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'instsani_pl_pingback_header' );
+
+function instsani_pl_side_menu() {
+	$menu = get_nav_menu_locations();
+	if ( ! isset( $menu['menu-sidebar'] ) ) {
+		return;
+	}
+	$items = wp_get_nav_menu_items( $menu['menu-sidebar'] );
+	$ids   = array();
+	foreach ( $items as $one ) {
+		$title = sprintf(
+			'<a href="%s">%s</a>',
+			get_permalink( $one->object_id ),
+			$one->title
+		);
+		$args  = array(
+			'child_of'    => $one->object_id,
+			'sort_column' => 'menu_order',
+			'depth'       => 1,
+			'title_li'    => $title,
+		);
+		wp_list_pages( $args );
+	}
+}
+

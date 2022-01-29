@@ -6,12 +6,8 @@
  *
  * @package Handbook_for_technical_school_students
  */
-
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
 ?>
-
 <aside id="secondary" class="widget-area">
+	<?php instsani_pl_side_menu(); ?>
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->

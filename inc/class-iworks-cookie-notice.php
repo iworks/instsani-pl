@@ -56,11 +56,11 @@ class iWorks_Cookie_Notice extends iWorks_Theme_Base {
 			'user_id' => get_current_user_id(),
 			'nonce'   => wp_create_nonce( __CLASS__ ),
 			'text'    => sprintf(
-				__( 'We use cookies and similar technologies to provide services and to gather information for statistical and other purposes. You can change the way you want the cookies to be stored or accessed on your device in the settings of your browser. If you do not agree, change the settings of your browser. For more information, refer to our %s.', '' ),
+				__( 'We use cookies and similar technologies to provide services and to gather information for statistical and other purposes. You can change the way you want the cookies to be stored or accessed on your device in the settings of your browser. If you do not agree, change the settings of your browser. For more information, refer to our %s.', 'instsani-pl' ),
 				sprintf(
 					'<a href="%s">%s</a>',
 					get_privacy_policy_url(),
-					_x( 'Privacy Policy', 'in cookie message, mayby propoer form', '' )
+					_x( 'Privacy Policy', 'in cookie message, mayby propoer form', 'instsani-pl' )
 				)
 			),
 		);
@@ -88,8 +88,8 @@ class iWorks_Cookie_Notice extends iWorks_Theme_Base {
 		// Data.
 		$content .= sprintf(
 			'<span><a href="#" class="button iworks-cn-set-cookie" aria-label="%s">%s</a></span>',
-			esc_attr__( 'Close cookie information.', '' ),
-			esc_html__( 'Close cookie information', '' )
+			esc_attr__( 'Close cookie information.', 'instsani-pl' ),
+			esc_html__( 'Close cookie information', 'instsani-pl' )
 		);
 		$content .= '</div>';
 		$content .= '</div>';

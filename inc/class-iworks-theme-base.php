@@ -103,7 +103,7 @@ abstract class iWorks_Theme_Base {
 		echo '<p>';
 		printf(
 			'<button type="button" class="button button-add-file">%s</button>',
-			esc_html__( 'Add file', '' )
+			esc_html__( 'Add file', 'instsani-pl' )
 		);
 		echo '</p>';
 		printf(
@@ -145,7 +145,7 @@ abstract class iWorks_Theme_Base {
 		<span class="dashicons dashicons-move"></span>
 		<span class="icon iworks-media-<?php echo esc_attr( $data['type'] ); ?>-<?php echo esc_attr( $data['subtype'] ); ?>" style="background-image:url(<?php echo esc_attr( $data['icon'] ); ?>"></span>
 		<span><a href="<?php echo esc_attr( $data['url'] ); ?>" target="_blank"><?php echo esc_html( $data['url'] ); ?></a><br /><small><?php echo esc_html( $data['caption'] ); ?></small></span>
-		<button type="button" aria-label="<?php esc_attr_e( 'Remove file', '' ); ?>"><span class="dashicons dashicons-trash"></span></button>
+		<button type="button" aria-label="<?php esc_attr_e( 'Remove file', 'instsani-pl' ); ?>"><span class="dashicons dashicons-trash"></span></button>
 		<input type="hidden" name="<?php echo esc_attr( $this->option_name_media ); ?>[]" value="<?php echo esc_attr( $data['id'] ); ?>" />
 	</div>
 		<?php

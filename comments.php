@@ -15,6 +15,7 @@
  * the visitor has not yet entered the password we will
  * return early without loading the comments.
  */
+return;
 if ( post_password_required() ) {
 	return;
 }
@@ -36,7 +37,7 @@ if ( post_password_required() ) {
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			} else {
-				printf( 
+				printf(
 					/* translators: 1: comment count number, 2: title. */
 					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $instsani_pl_comment_count, 'comments title', 'instsani-pl' ) ),
 					number_format_i18n( $instsani_pl_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

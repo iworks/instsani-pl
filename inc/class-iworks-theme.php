@@ -37,6 +37,7 @@ class iWorks_Theme extends iWorks_Theme_Base {
 		add_action( 'after_setup_theme', array( $this, 'load_theme_textdomain' ) );
 		add_action( 'after_setup_theme', array( $this, 'setup' ) );
 		add_action( 'after_setup_theme', array( $this, 'content_width' ) );
+		add_filter( 'the_content', array( $this, 'filter_the_content_add_subpages_list' ) );
 		/**
 		 * js
 		 */
@@ -80,7 +81,7 @@ class iWorks_Theme extends iWorks_Theme_Base {
 		}
 		wp_enqueue_style( 'iworks-style', get_stylesheet_uri(), $deps, $this->version );
 		wp_style_add_data( 'iworks-style', 'rtl', 'replace' );
-		wp_enqueue_script( '' );
+		wp_enqueue_script( 'instsani-pl' );
 	}
 
 	public function register_scripts() {
@@ -89,7 +90,7 @@ class iWorks_Theme extends iWorks_Theme_Base {
 		 * theme
 		 */
 		wp_register_script(
-			'',
+			'instsani-pl',
 			$this->url . sprintf( '/assets/scripts/frontend.%sjs', $this->debug ? '' : 'min.' ),
 			$deps,
 			$this->version,
@@ -99,7 +100,7 @@ class iWorks_Theme extends iWorks_Theme_Base {
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		);
 		$data = apply_filters( 'wp_localize_script_iworks_theme', $data );
-		wp_localize_script( '', 'iworks_theme', $data );
+		wp_localize_script( 'instsani-pl', 'iworks_theme', $data );
 	}
 
 	/**
@@ -172,7 +173,7 @@ class iWorks_Theme extends iWorks_Theme_Base {
 	public function register_sidebars() {
 		register_sidebar(
 			array(
-				'name'          => __( 'Footer One', '' ),
+				'name'          => __( 'Footer One', 'instsani-pl' ),
 				'id'            => 'footer-1',
 				'before_widget' => '<div>',
 				'after_widget'  => '</div>',
@@ -180,9 +181,9 @@ class iWorks_Theme extends iWorks_Theme_Base {
 		);
 		register_sidebar(
 			array(
-				'name'          => esc_html__( 'Sidebar', '' ),
+				'name'          => esc_html__( 'Sidebar', 'instsani-pl' ),
 				'id'            => 'sidebar-1',
-				'description'   => esc_html__( 'Add widgets here.', '' ),
+				'description'   => esc_html__( 'Add widgets here.', 'instsani-pl' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h2 class="widget-title">',
@@ -208,7 +209,7 @@ class iWorks_Theme extends iWorks_Theme_Base {
 	}
 
 	public function load_theme_textdomain() {
-		load_theme_textdomain( '', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'instsani-pl', get_template_directory() . '/languages' );
 	}
 
 	public function setup() {
@@ -217,7 +218,8 @@ class iWorks_Theme extends iWorks_Theme_Base {
 		add_theme_support( 'post-thumbnails' );
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', '' ),
+				'menu-1'       => esc_html__( 'Primary', 'instsani-pl' ),
+				'menu-sidebar' => esc_html__( 'Sidebar', 'instsani-pl' ),
 			)
 		);
 		add_theme_support(
@@ -238,5 +240,26 @@ class iWorks_Theme extends iWorks_Theme_Base {
 		$GLOBALS['content_width'] = apply_filters( 'iworks_content_width', 640 );
 	}
 
+	public function filter_the_content_add_subpages_list( $content ) {
+		if ( ! is_page() ) {
+			return $content;
+		}
+		$args = array(
+			'child_of'    => get_the_ID(),
+			'sort_column' => 'menu_order',
+			'depth'       => 1,
+			'title_li'    => false,
+			'echo'        => false,
+		);
+		$list = wp_list_pages( $args );
+		if ( ! empty( $list ) ) {
+			$content = sprintf(
+				'<ul>%s</ul>%s',
+				$list,
+				$content
+			);
+		}
+		return $content;
+	}
 }
 
