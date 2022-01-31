@@ -39,10 +39,13 @@ body {
         }
     }
 }
+.banners {
+    width: 100%;
+    text-align: center;
+}
 ins {
     background-color: var(--color-white);
 }
-
 
 @import 'elements/header.scss';
 @import 'elements/layout.scss';
