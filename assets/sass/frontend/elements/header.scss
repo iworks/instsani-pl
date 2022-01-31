@@ -22,6 +22,18 @@
 .site-branding {
     display: grid;
     grid-template-columns: 332px auto 316px;
+    @media screen and (max-width: $width_m) {
+        display: block;
+        .site-title {
+            margin: var(--padding-small) auto;
+        }
+        .psb {
+            a {
+            margin: var(--padding-small) auto;
+            }
+        }
+
+    }
     .psb {
         a {
             @include logo_size;

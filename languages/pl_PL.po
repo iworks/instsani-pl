@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: Handbook for technical school students "
 "1.0.0.1643613972181\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/instsani-pl\n"
-"POT-Creation-Date: 2022-01-31 15:35:32+00:00\n"
-"PO-Revision-Date: 2022-01-31 11:25+0100\n"
+"POT-Creation-Date: 2022-01-31 18:49:04+00:00\n"
+"PO-Revision-Date: 2022-01-31 19:49+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -112,6 +112,10 @@ msgstr "Tutaj można dodać widżety."
 #: inc/class-iworks-theme.php:228
 msgid "Primary"
 msgstr "Główny"
+
+#: inc/class-iworks-theme.php:230
+msgid "Footer"
+msgstr "Stopka"
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:63

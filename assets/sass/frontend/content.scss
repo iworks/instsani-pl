@@ -7,6 +7,9 @@ body {
     a {
         text-decoration: none;
         color: var(--color-primary);
+        &:visited {
+            color: var(--color-primary);
+        }
         &:hover {
             color: var(--color-accent);
         }
@@ -30,6 +33,22 @@ body {
         h4 {
             @include font(15);
         }
+        table {
+            border: {
+                collapse: collapse;
+                color: var(--color-gray-1);
+            }
+            td, th {
+                padding: 5px;
+            }
+            tr {
+                &:nth-child(odd) {
+                    td {
+                        background-color: var(--color-gray-3);
+                    }
+                }
+            }
+        }
     }
     &.page {
         #primary {
@@ -40,14 +59,19 @@ body {
     }
 }
 .banners {
+    display: inline-block;
     width: 100%;
     text-align: center;
+    &.banners-before {
+        max-width: 728px;
+    }
 }
 ins {
     background-color: var(--color-white);
 }
 
 .breadcrumbs {
+    color: var(--color-gray-1);
     .home {
         @include iconb('home.svg');
         display: inline-block;

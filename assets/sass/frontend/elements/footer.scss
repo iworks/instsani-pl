@@ -9,7 +9,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
     .menu {
         @include reset_ul;
         display: flex;
@@ -18,5 +17,11 @@
             padding: var(--padding-small);
         }
     }
-
+    @media screen and (max-width: $width_m) {
+        display: block;
+        .menu {
+            display: block;
+        }
+    }
 }
+

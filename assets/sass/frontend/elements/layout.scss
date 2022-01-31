@@ -3,10 +3,23 @@
 #page,
 .wrapper,
 #masthead {
-    @include default_width;
+    @include default_width_no_paddings;
+}
+
+@media screen and (max-width: $width_m) {
+    .site {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "main" "footer";
+        main {
+            padding: 0 var(--padding-small);
+        }
+    }
 }
 
 .side-menu {
+    @media screen and (max-width: $width_m) {
+        display: none;
+    }
     @include reset_ul;
     background-color: var(--color-gray-3);
     margin-right: var(--padding-default);
