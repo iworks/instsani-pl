@@ -8,6 +8,6 @@
  */
 ?>
 <aside id="secondary" class="widget-area">
-	<?php instsani_pl_side_menu(); ?>
+	<ul class="side-menu"><?php instsani_pl_side_menu(); ?></ul>
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->

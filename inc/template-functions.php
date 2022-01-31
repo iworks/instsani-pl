@@ -39,10 +39,16 @@ function instsani_pl_side_menu() {
 	$items = wp_get_nav_menu_items( $menu['menu-sidebar'] );
 	$ids   = array();
 	foreach ( $items as $one ) {
+		$url = '';
+		if ( has_post_thumbnail( $one->object_id ) ) {
+			$url = get_the_post_thumbnail_url( $one->object_id, 'menu' );
+		}
 		$title = sprintf(
-			'<a href="%s">%s</a>',
+			'<a href="%s" class="%s" style="%s">%s</a>',
 			get_permalink( $one->object_id ),
-			$one->title
+			esc_attr( implode( ' ', get_post_class( '', $one->object_id ) ) ),
+			empty( $url ) ? '' : sprintf( 'background-image:url(%s)', wp_make_link_relative( $url ) ),
+			esc_html( $one->title )
 		);
 		$args  = array(
 			'child_of'    => $one->object_id,

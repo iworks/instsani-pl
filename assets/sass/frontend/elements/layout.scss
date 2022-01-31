@@ -5,3 +5,36 @@
 #masthead {
     @include default_width;
 }
+
+.side-menu {
+    @include reset_ul;
+    background-color: var(--color-gray-3);
+    margin-right: var(--padding-default);
+    a {
+        display: block;
+        padding: var(--padding-small);
+        background: {
+            color: var(--color-gray-2);
+            repeat: no-repeat;
+            size: contain;
+            position: 50% 100%;
+        }
+        color: var(--color-white);
+        margin: 0;
+        &.has-post-thumbnail {
+            padding-bottom: calc( 2em + 105px );
+        }
+    }
+    ul {
+        @include reset_ul;
+        a {
+            background-color: transparent;
+            color: var(--color-primary);
+            &:hover {
+                background-color: var(--color-accent);
+                color: var(--color-white);
+            }
+        }
+    }
+}
+

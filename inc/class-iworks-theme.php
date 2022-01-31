@@ -168,6 +168,7 @@ class iWorks_Theme extends iWorks_Theme_Base {
 
 	public function add_image_sizes() {
 		add_image_size( 'list', 600, 400, true );
+		add_image_size( 'menu', 250, 106, true );
 	}
 
 	public function register_sidebars() {

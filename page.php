@@ -16,12 +16,21 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<div class="entry-wrapper">
+<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+	<?php
+	if ( function_exists( 'bcn_display' ) ) {
+		bcn_display();
+	}
+	?>
+</div>
 		<?php
 		while ( have_posts() ) :
 			the_post();
 			get_template_part( 'template-parts/content', 'page' );
 		endwhile; // End of the loop.
 		?>
+		</div>
 		<?php get_template_part( 'template-parts/adsbygoogle/side' ); ?>
 	</main><!-- #main -->
 <?php
