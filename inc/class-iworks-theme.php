@@ -148,12 +148,6 @@ class iWorks_Theme extends iWorks_Theme_Base {
 				PHP_EOL
 			);
 		}
-		/**
-		 * reCaptcha Files
-		 */
-		if ( is_singular( 'kontakt' ) ) {
-			echo '<script src="https://www.google.com/recaptcha/api.js"></script>';
-		}
 	}
 
 	/**
