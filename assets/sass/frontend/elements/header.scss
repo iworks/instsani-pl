@@ -32,7 +32,43 @@
         }
     }
     .search {
+        place-self: center;
         margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        form {
+            display: inline-block;
+            position: relative;
+            border: 1px solid var(--color-gray-1);
+        }
+        label {
+            padding-right: 3em;
+        }
+        input {
+        @include font(18);
+            @include reset_min;
+            padding: var(--padding-small);
+            &[type=search] {
+                width: 300px;
+            }
+            &[type=submit] {
+                @include reset_min;
+                @include iconb('search.svg');
+                background-size: 70% auto;
+                display: block;
+                overflow: hidden;
+                text-indent: -999em;
+                width: 2em;
+                position: absolute;
+                right: 5px;
+                top: 0;
+                bottom: 0;
+                opacity: .5;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 

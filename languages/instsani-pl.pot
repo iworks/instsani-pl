@@ -3,9 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Handbook for technical school students "
-"1.0.0.1643625325174\n"
+"1.0.0.1643627238511\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/instsani-pl\n"
-"POT-Creation-Date: 2022-01-31 10:35:25+00:00\n"
+"POT-Creation-Date: 2022-01-31 11:07:18+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -91,19 +91,19 @@ msgstr ""
 msgid "Remove file"
 msgstr ""
 
-#: inc/class-iworks-theme.php:176
+#: inc/class-iworks-theme.php:177
 msgid "Footer One"
 msgstr ""
 
-#: inc/class-iworks-theme.php:184 inc/class-iworks-theme.php:222
+#: inc/class-iworks-theme.php:185 inc/class-iworks-theme.php:223
 msgid "Sidebar"
 msgstr ""
 
-#: inc/class-iworks-theme.php:186
+#: inc/class-iworks-theme.php:187
 msgid "Add widgets here."
 msgstr ""
 
-#: inc/class-iworks-theme.php:221
+#: inc/class-iworks-theme.php:222
 msgid "Primary"
 msgstr ""
 
@@ -166,7 +166,7 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:22 template-parts/content.php:53
+#: template-parts/content-page.php:21 template-parts/content.php:53
 msgid "Pages:"
 msgstr ""
 
