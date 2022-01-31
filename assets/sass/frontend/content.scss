@@ -47,6 +47,19 @@ ins {
     background-color: var(--color-white);
 }
 
+.breadcrumbs {
+    .home {
+        @include iconb('home.svg');
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        background-position: bottom;
+        span {
+            display: none;
+        }
+    }
+}
+
 @import 'elements/header.scss';
 @import 'elements/layout.scss';
 @import 'elements/forms.scss';
