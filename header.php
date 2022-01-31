@@ -51,5 +51,5 @@
 			<div class="psb">
 				<a href="http://212.182.68.10/technikum/" target="_blank"><span>Państwowe Szkoły Budownictwa i Geodezji im. Hieronima Łopacińskiego w Lublinie</span></a>
 		</div><!-- .site-branding -->
+		<?php get_template_part( 'template-parts/adsbygoogle/before' ); ?>
 	</header><!-- #masthead -->
-<?php get_template_part( 'template-parts/adsbygoogle/before' ); ?>
