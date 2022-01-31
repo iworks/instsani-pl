@@ -204,6 +204,10 @@ $image_root: 'assets/images/';
  * fonts
  */
 
+@mixin font_s() { @include font(12); }
+@mixin font_m() { @include font(14); }
+@mixin font_l() { @include font(16); }
+
 $font_root: 'assets/fonts/';
 
 @mixin font( $size, $line: au ) {
