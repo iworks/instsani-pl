@@ -23,7 +23,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<?php get_template_part( 'template-parts/adsbygoogle/footer' ); ?>
 
-<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
 </body>
 </html>

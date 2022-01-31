@@ -8,8 +8,8 @@
 		"type": "git",
 		"url": "git@github.com:iworks/instsani-pl.git"
 	},
-	"author": "",
-	"author_uri": "",
+	"author": "Marcin Pietrzak",
+	"author_uri": "http://iworks.pl/",
 	"contributors": [
 		{
 			"name": "Marcin Pietrzak",
