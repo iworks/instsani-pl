@@ -148,6 +148,12 @@ class iWorks_Theme extends iWorks_Theme_Base {
 				PHP_EOL
 			);
 		}
+		/**
+		 * reCaptcha Files
+		 */
+		if ( is_singular( 'kontakt' ) ) {
+			echo '<script src="https://www.google.com/recaptcha/api.js"></script>';
+		}
 	}
 
 	/**
@@ -221,6 +227,7 @@ class iWorks_Theme extends iWorks_Theme_Base {
 			array(
 				'menu-1'       => esc_html__( 'Primary', 'instsani-pl' ),
 				'menu-sidebar' => esc_html__( 'Sidebar', 'instsani-pl' ),
+				'menu-footer'  => esc_html__( 'Footer', 'instsani-pl' ),
 			)
 		);
 		add_theme_support(

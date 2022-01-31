@@ -24,17 +24,53 @@
         &.has-post-thumbnail {
             padding-bottom: calc( 2em + 105px );
         }
+            &:hover {
+                background-color: var(--color-accent);
+                color: var(--color-white);
+            }
     }
     ul {
         @include reset_ul;
         a {
             background-color: transparent;
             color: var(--color-primary);
-            &:hover {
-                background-color: var(--color-accent);
-                color: var(--color-white);
+        }
+        .current-menu-item {
+            > {
+                a {
+                    color: var(--color-accent);
+                    &:hover {
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+        &.level-2 {
+            a {
+                padding-left: 20px;
+            }
+        }
+        &.level-3 {
+            a {
+                padding-left: 30px;
+            }
+        }
+        &.level-4 {
+            a {
+                padding-left: 40px;
+            }
+        }
+        &.level-5 {
+            a {
+                padding-left: 50px;
+            }
+        }
+        &.level-6 {
+            a {
+                padding-left: 60px;
             }
         }
     }
+
 }
 

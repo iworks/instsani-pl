@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Handbook for technical school students "
 "1.0.0.1643613972181\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/instsani-pl\n"
-"POT-Creation-Date: 2022-01-31 11:07:18+00:00\n"
+"POT-Creation-Date: 2022-01-31 15:35:32+00:00\n"
 "PO-Revision-Date: 2022-01-31 11:25+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -97,19 +97,19 @@ msgstr "Dodaj plik"
 msgid "Remove file"
 msgstr "Usuń plik"
 
-#: inc/class-iworks-theme.php:177
+#: inc/class-iworks-theme.php:183
 msgid "Footer One"
 msgstr "Pierwsza stopka"
 
-#: inc/class-iworks-theme.php:185 inc/class-iworks-theme.php:223
+#: inc/class-iworks-theme.php:191 inc/class-iworks-theme.php:229
 msgid "Sidebar"
 msgstr "Panel boczny"
 
-#: inc/class-iworks-theme.php:187
+#: inc/class-iworks-theme.php:193
 msgid "Add widgets here."
 msgstr "Tutaj można dodać widżety."
 
-#: inc/class-iworks-theme.php:222
+#: inc/class-iworks-theme.php:228
 msgid "Primary"
 msgstr "Główny"
 

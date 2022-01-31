@@ -6,4 +6,17 @@
     @include font_s;
     margin-top: var(--padding-default);
     padding: var(--padding-small);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .menu {
+        @include reset_ul;
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            padding: var(--padding-small);
+        }
+    }
+
 }

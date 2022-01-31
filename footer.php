@@ -13,12 +13,20 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-				<?php
-				/* translators: %s: year */
-				printf( esc_html__( '&copy; %s Alfred Adamczewski', 'instsani-pl' ), date( 'Y' ) );
-				?>
+<?php
+/* translators: %s: year */
+printf( esc_html__( '&copy; %s Alfred Adamczewski', 'instsani-pl' ), date( 'Y' ) );
+?>
 			</a>
 		</div><!-- .site-info -->
+<?php
+wp_nav_menu(
+	array(
+		'theme_location' => 'menu-footer',
+		'menu_id'        => 'footer-menu',
+	)
+);
+?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
