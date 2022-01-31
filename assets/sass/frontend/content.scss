@@ -31,6 +31,16 @@ body {
             @include font(15);
         }
     }
+    &.page {
+        #primary {
+            display: grid;
+            grid-template-columns: auto 160px;
+            gap: var(--padding-small);
+        }
+    }
+}
+ins {
+    background-color: var(--color-white);
 }
 
 

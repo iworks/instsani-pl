@@ -16,11 +16,12 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<?php wp_head(); ?>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
+<script> (adsbygoogle = window.adsbygoogle || []).push({});</script>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'instsani-pl' ); ?></a>
@@ -51,3 +52,4 @@
 				<a href="http://212.182.68.10/technikum/" target="_blank"><span>Państwowe Szkoły Budownictwa i Geodezji im. Hieronima Łopacińskiego w Lublinie</span></a>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
+<?php get_template_part( 'template-parts/adsbygoogle/before' ); ?>
