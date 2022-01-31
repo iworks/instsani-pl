@@ -3,68 +3,69 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Handbook for technical school students "
-"1.0.0.1643614359121\n"
+"1.0.0.1643613972181\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/instsani-pl\n"
 "POT-Creation-Date: 2022-01-31 07:32:39+00:00\n"
+"PO-Revision-Date: 2022-01-31 08:32+0100\n"
+"Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
+"Language-Team: \n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2022-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Country: United States\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
-"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
-"X-Poedit-Basepath: ../\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-Bookmarks: \n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
 "X-Textdomain-Support: yes\n"
-"X-Generator: grunt-wp-i18n 1.0.3\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "Niestety, nie udało się znaleźć wybranej strony."
 
 #: 404.php:21
 msgid ""
-"It looks like nothing was found at this location. Maybe try one of the "
-"links below or a search?"
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
+"Jak widać nie bardzo jest co wyświetlić w tym miejscu. Może warto spróbować "
+"poszukać lub użyć odnośników?"
 
 #: 404.php:30
 msgid "Most Used Categories"
-msgstr ""
+msgstr "Najczęściej używane kategorie"
 
-#: 404.php:48
 #. translators: %1$s: smiley
+#: 404.php:48
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
+msgstr "Proszę spróbować w archiwum miesięcznym. %1$s"
 
-#: comments.php:36
 #. translators: 1: title.
+#: comments.php:36
 msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr ""
+msgstr "Jeden komentarz  do &ldquo;%1$s&rdquo;"
 
 #: comments.php:69
 msgid "Comments are closed."
-msgstr ""
+msgstr "Komentowanie jest wyłączone."
 
-#: footer.php:18
 #. translators: %s: year
+#: footer.php:18
 msgid "&copy; %s Alfred Adamczewski"
-msgstr ""
+msgstr "&copy; %s Alfred Adamczewski"
 
 #: header.php:26
 msgid "Skip to content"
-msgstr ""
+msgstr "Przejdź do treści"
 
 #: header.php:29
 msgid "Primary Menu"
-msgstr ""
+msgstr "Menu główne"
 
 #: inc/class-iworks-cookie-notice.php:59
 msgid ""
@@ -74,146 +75,157 @@ msgid ""
 "your browser. If you do not agree, change the settings of your browser. For "
 "more information, refer to our %s."
 msgstr ""
+"Używamy cookies i podobnych technologii m.in. w celu świadczenia usług i w "
+"celach statystycznych. Można określić warunki przechowywania lub dostępu do "
+"plików cookies w używanej przeglądarce, w jej ustawieniach. Jeżeli nie "
+"wyrażono zgody – proszę zmienić ustawienia swojej przeglądarki. Więcej "
+"informacji można znaleźć w naszej %s."
 
 #: inc/class-iworks-cookie-notice.php:91
 msgid "Close cookie information."
-msgstr ""
+msgstr "Zamknij informację o ciasteczkach."
 
 #: inc/class-iworks-cookie-notice.php:92
 msgid "Close cookie information"
-msgstr ""
+msgstr "Zamknij informację o ciasteczkach"
 
 #: inc/class-iworks-theme-base.php:106
 msgid "Add file"
-msgstr ""
+msgstr "Dodaj plik"
 
 #: inc/class-iworks-theme-base.php:148
 msgid "Remove file"
-msgstr ""
+msgstr "Usuń plik"
 
 #: inc/class-iworks-theme.php:176
 msgid "Footer One"
-msgstr ""
+msgstr "Pierwsza stopka"
 
 #: inc/class-iworks-theme.php:184 inc/class-iworks-theme.php:222
 msgid "Sidebar"
-msgstr ""
+msgstr "Panel boczny"
 
 #: inc/class-iworks-theme.php:186
 msgid "Add widgets here."
-msgstr ""
+msgstr "Tutaj można dodać widżety."
 
 #: inc/class-iworks-theme.php:221
 msgid "Primary"
-msgstr ""
+msgstr "Główny"
 
-#: inc/template-tags.php:63
 #. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:63
 msgid ", "
-msgstr ""
+msgstr ", "
 
-#: inc/template-tags.php:66
 #. translators: 1: list of categories.
+#: inc/template-tags.php:66
 msgid "Posted in %1$s"
-msgstr ""
+msgstr "Opublikowany w %s"
 
-#: inc/template-tags.php:73
 #. translators: 1: list of tags.
+#: inc/template-tags.php:73
 msgid "Tagged %1$s"
-msgstr ""
+msgstr "Tagi %1$s"
 
-#: inc/template-tags.php:83
 #. translators: %s: post title
+#: inc/template-tags.php:83
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
+msgstr "Zostaw komentarz<span class=\"screen-reader-text\"> do %s</span>"
 
-#: inc/template-tags.php:100 template-parts/content-page.php:39
 #. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:100 template-parts/content-page.php:39
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr ""
+msgstr "Edytuj <span class=\"screen-reader-text\">%s</span>"
 
-#: search.php:21
 #. translators: %s: search query.
+#: search.php:21
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Wyniki wyszukiwania dla: %s"
 
 #: single.php:23
 msgid "Previous:"
-msgstr ""
+msgstr "Poprzedni:"
 
 #: single.php:24
 msgid "Next:"
-msgstr ""
+msgstr "Następny:"
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
-msgstr ""
+msgstr "Niczego nie znaleziono"
 
-#: template-parts/content-none.php:24
 #. translators: 1: link to WP admin new post page.
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#: template-parts/content-none.php:24
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"Czy można już opublikować pierwszy wpis? <a href=\"%1$s\">można zacząć "
+"tutaj</a>."
 
 #: template-parts/content-none.php:37
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Przepraszamy, ale niczego nie znaleźliśmy. Proszę spróbować inną frazę."
 
 #: template-parts/content-none.php:44
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Wygląda na to, że szukana strona nie istnieje. Być może warto jej poszukać."
 
 #: template-parts/content-page.php:25 template-parts/content.php:53
 msgid "Pages:"
-msgstr ""
+msgstr "Strony:"
 
-#: template-parts/content.php:40
 #. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:40
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
+msgstr "Czytaj dalej<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #. Theme Name of the plugin/theme
 msgid "Handbook for technical school students"
-msgstr ""
+msgstr "Vademecum dla uczniów techników"
 
 #. Theme URI of the plugin/theme
 msgid "http://iworks.pl/wordpress/theme/"
-msgstr ""
+msgstr "http://iworks.pl/wordpress/theme/"
 
 #. Template Name of the plugin/theme
 msgid "Sitemap"
-msgstr ""
+msgstr "Mapa witryny"
 
-#: comments.php:42
 #. translators: 1: comment count number, 2: title.
+#: comments.php:42
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s komentarz do &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s komentarze do &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s komentarzy do &ldquo;%2$s&rdquo;"
 
 #: inc/class-iworks-cookie-notice.php:63
 msgctxt "in cookie message, mayby propoer form"
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Polityce prywatności"
 
-#: inc/template-tags.php:30
 #. translators: %s: post date.
+#: inc/template-tags.php:30
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr ""
+msgstr "Opublikowano: %s"
 
-#: inc/template-tags.php:46
 #. translators: %s: post author.
+#: inc/template-tags.php:46
 msgctxt "post author"
 msgid "by %s"
-msgstr ""
+msgstr "przez %s"
 
-#: inc/template-tags.php:70
 #. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:70
 msgctxt "list item separator"
 msgid ", "
-msgstr ""
+msgstr ", "
