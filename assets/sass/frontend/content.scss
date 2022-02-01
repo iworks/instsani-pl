@@ -62,9 +62,6 @@ body {
     display: inline-block;
     width: 100%;
     text-align: center;
-    &.banners-before {
-        max-width: 728px;
-    }
 }
 ins {
     background-color: var(--color-white);
