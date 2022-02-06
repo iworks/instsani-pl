@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Handbook for technical school students "
 "1.0.0.1643613972181\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/instsani-pl\n"
-"POT-Creation-Date: 2022-01-31 19:26:30+00:00\n"
+"POT-Creation-Date: 2022-02-06 09:33:31+00:00\n"
 "PO-Revision-Date: 2022-01-31 19:49+0100\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: \n"
@@ -132,16 +132,6 @@ msgstr "Opublikowany w %s"
 msgid "Tagged %1$s"
 msgstr "Tagi %1$s"
 
-#. translators: %s: post title
-#: inc/template-tags.php:83
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr "Zostaw komentarz<span class=\"screen-reader-text\"> do %s</span>"
-
-#. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:100
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr "Edytuj <span class=\"screen-reader-text\">%s</span>"
-
 #. translators: %s: search query.
 #: search.php:21
 msgid "Search Results for: %s"
@@ -241,3 +231,9 @@ msgstr "przez %s"
 msgctxt "list item separator"
 msgid ", "
 msgstr ", "
+
+#~ msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+#~ msgstr "Zostaw komentarz<span class=\"screen-reader-text\"> do %s</span>"
+
+#~ msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+#~ msgstr "Edytuj <span class=\"screen-reader-text\">%s</span>"

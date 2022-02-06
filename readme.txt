@@ -1,16 +1,16 @@
 === Handbook for technical school students ===
 
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Contributors: iworks
+Tags: custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.5
-Tested up to: 5.4
+Tested up to: 6.0
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: THEME_VERSION
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Handbook for technical school students.
+A theme called Handbook for technical school students.
 
 == Description ==
 
@@ -30,7 +30,7 @@ Handbook for technical school students includes support for WooCommerce and for 
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.0.0 (2022-02-06) =
 * Initial release
 
 == Credits ==
