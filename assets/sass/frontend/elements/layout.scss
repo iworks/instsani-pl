@@ -35,12 +35,23 @@
         color: var(--color-white);
         margin: 0;
         &.has-post-thumbnail {
-            padding-bottom: calc( 2em + 105px );
+            padding-bottom: calc( 1.6em + 105px );
         }
-            &:hover {
-                background-color: var(--color-accent);
-                color: var(--color-white);
+        &:hover {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+        }
+    }
+    > {
+        li {
+            > {
+                a {
+                    &:visited {
+                        color: var(--color-white);
+                    }
+                }
             }
+        }
     }
     ul {
         @include reset_ul;

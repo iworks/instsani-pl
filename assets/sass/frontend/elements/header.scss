@@ -113,6 +113,9 @@
             color: var(--color-white);
             white-space: nowrap;
             width: auto;
+            &:visited {
+                color: var(--color-white);
+            }
             &:hover {
                 text-decoration: none;
             }

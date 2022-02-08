@@ -222,29 +222,6 @@ $font_root: 'assets/fonts/';
     }
 }
 
-@mixin font_crimson_pro() {
-    font-family: var(--font-family-serif);
-}
-
-@mixin font_crimson_pro_semi_bold() {
-    @include font_crimson_pro;
-    font-weight: 600;
-}
-
-@mixin font_montserrat() {
-    font-family: var(--font-family-sans-serif);
-}
-
-@mixin font_montserrat_light() {
-    @include font_montserrat;
-    font-weight: 300;
-}
-
-@mixin font_montserrat_medium() {
-    @include font_montserrat;
-    font-weight: 500;
-}
-
 /**
  * links
  */
@@ -369,18 +346,15 @@ $font_root: 'assets/fonts/';
  */
 
 @mixin header_1() {
-    @include font_crimson_pro_semi_bold;
     @include font(40, 40);
     color: var(--color-blue-2);
 }
 
 @mixin header_2() {
-    @include font_montserrat_light;
     @include font(25);
 }
 
 @mixin header_3() {
-    @include font_crimson_pro_semi_bold;
     @include font(28,30);
     font-weight: 400;
 }

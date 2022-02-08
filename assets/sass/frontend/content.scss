@@ -1,9 +1,9 @@
 @import '_mixin';
+@import 'font-family';
 
 body {
     background-color: var(--color-white);
     color: var(--color-primary);
-    @include font(14);
     a {
         text-decoration: none;
         color: var(--color-primary);
@@ -55,6 +55,11 @@ body {
             display: grid;
             grid-template-columns: auto 160px;
             gap: var(--padding-small);
+            header {
+                h1 {
+                    margin-top: 0;
+                }
+            }
         }
     }
 }
@@ -80,6 +85,7 @@ ins {
         }
     }
 }
+
 
 @import 'elements/header.scss';
 @import 'elements/layout.scss';
