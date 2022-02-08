@@ -17,7 +17,6 @@
 /* translators: %s: year */
 printf( esc_html__( '&copy; %s Alfred Adamczewski', 'instsani-pl' ), date( 'Y' ) );
 ?>
-			</a>
 		</div><!-- .site-info -->
 <?php
 wp_nav_menu(
