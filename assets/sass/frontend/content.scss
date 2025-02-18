@@ -2,92 +2,122 @@
 @import 'font-family';
 
 body {
-    background-color: var(--color-white);
-    color: var(--color-primary);
-    a {
-        text-decoration: none;
-        color: var(--color-primary);
-        &:visited {
-            color: var(--color-primary);
-        }
-        &:hover {
-            color: var(--color-accent);
-        }
-    }
-    article {
-        a {
-            color: var(--color-accent);
-            &:visited {
-                color: var(--color-accent);
-            }
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-        h2 {
-            @include font(17);
-        }
-        h3 {
-            @include font(16);
-        }
-        h4 {
-            @include font(15);
-        }
-        table {
-            border: {
-                collapse: collapse;
-                color: var(--color-gray-1);
-            }
-            td, th {
-                padding: 5px;
-            }
-            tr {
-                &:nth-child(odd) {
-                    td {
-                        background-color: var(--color-gray-3);
-                    }
-                }
-            }
-        }
-    }
-    &.page {
-        #primary {
-            display: grid;
-            grid-template-columns: auto 160px;
-            gap: var(--padding-small);
-        }
-    }
-    &.home {
-        #primary {
-            header {
-                h1 {
-                    margin-top: 0;
-                }
-            }
-        }
-    }
+	background-color: var(--color-white);
+	color: var(--color-primary);
+
+	a {
+		text-decoration: none;
+		color: var(--color-primary);
+
+		&:visited {
+			color: var(--color-primary);
+		}
+
+		&:hover {
+			color: var(--color-accent);
+		}
+	}
+
+	article {
+		a {
+			color: var(--color-accent);
+
+			&:visited {
+				color: var(--color-accent);
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		h2 {
+			@include font(17);
+		}
+
+		h3 {
+			@include font(16);
+		}
+
+		h4 {
+			@include font(15);
+		}
+
+		table {
+			border: {
+				collapse: collapse;
+				color: var(--color-gray-1);
+			}
+
+			td,
+			th {
+				padding: 5px;
+			}
+
+			tr {
+				&:nth-child(odd) {
+					td {
+						background-color: var(--color-gray-3);
+					}
+				}
+			}
+		}
+	}
+
+	&.page {
+		#primary {
+			display: grid;
+			grid-template-columns: auto 160px;
+			gap: var(--padding-small);
+		}
+	}
+
+	&.home {
+		#primary {
+			header {
+				h1 {
+					margin-top: 0;
+				}
+			}
+		}
+	}
 }
+
 .banners {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
 }
+
 ins {
-    background-color: var(--color-white);
+	background-color: var(--color-white);
 }
 
 .breadcrumbs {
-    color: var(--color-gray-1);
-    .home {
-        @include iconb('home.svg');
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        background-position: bottom;
-        span {
-            display: none;
-        }
-    }
+	color: var(--color-gray-1);
+
+	.home {
+		@include iconb('home.svg');
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		background-position: bottom;
+
+		span {
+			display: none;
+		}
+	}
+}
+
+.sr-only {
+	@include reset_min;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
 }
 
 
@@ -98,5 +128,3 @@ ins {
 @import 'elements/cookie-notice.scss';
 @import 'elements/lds-spinner.scss';
 @import 'elements/footer.scss';
-
-

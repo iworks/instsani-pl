@@ -30,6 +30,9 @@ Handbook for technical school students includes support for WooCommerce and for 
 
 == Changelog ==
 
+= 1.0.1 (2025-02-18) =
+* The header link has been changed.
+
 = 1.0.0 (2022-02-06) =
 * Initial release
 

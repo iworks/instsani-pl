@@ -49,7 +49,7 @@
 			<?php endif; ?>
 			<div class="search"><?php get_search_form(); ?></div>
 			<div class="psb">
-				<a href="http://212.182.68.10/technikum/" target="_blank"><span>Państwowe Szkoły Budownictwa i Geodezji im. Hieronima Łopacińskiego w Lublinie</span></a>
+				<a href="https://www.facebook.com/profile.php?id=61573038181996&locale=pl_PL" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="currentColor"><path d="M26.786,32H3.214A3.214,3.214,0,0,0,0,35.214V58.786A3.214,3.214,0,0,0,3.214,62h9.191V51.8H8.186V47h4.219V43.341c0-4.162,2.478-6.461,6.273-6.461A25.558,25.558,0,0,1,22.4,37.2v4.085H20.3a2.4,2.4,0,0,0-2.707,2.594V47H22.2l-.737,4.8H17.595V62h9.191A3.214,3.214,0,0,0,30,58.786V35.214A3.214,3.214,0,0,0,26.786,32Z" transform="translate(0 -32)"/></svg><span class="sr-only">Państwowe Szkoły Budownictwa i Geodezji im. Hieronima Łopacińskiego w Lublinie</span></a>
 			</div>
 		</div><!-- .site-branding -->
 		<?php get_template_part( 'template-parts/adsbygoogle/before' ); ?>
