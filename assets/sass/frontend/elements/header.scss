@@ -19,114 +19,132 @@
 	background-size: contain;
 	overflow: hidden;
 	text-indent: -999em;
+
+	@media screen and (max-width: 350px) {
+		width: 300px;
+		height: 60px;
+	}
 }
 
-.site-branding {
-	display: grid;
+.site {
+	&-branding {
+		display: grid;
 
-	grid: {
-		template: {
-			columns: 332px auto 50px;
+		grid: {
+			template: {
+				columns: 332px auto 50px;
+			}
 		}
-	}
 
-	align: {
-		items: center;
-	}
+		align: {
+			items: center;
+		}
 
-	@media screen and (max-width: $width_m) {
-		display: block;
+		max: {
+			width: 100%;
+		}
 
-		.site-title {
-			margin: var(--padding-small) auto;
+		@media screen and (max-width: $width_m) {
+			display: block;
+
+			.site-title {
+				padding: 0;
+				margin: var(--padding-small) auto;
+			}
+
+			.psb {
+				padding: {
+					top: var(--padding-default);
+				}
+			}
+
 		}
 
 		.psb {
-			a {}
-		}
+			a {
+				justify: {
+					self: center;
+				}
 
-	}
-
-	.psb {
-		a {
-			justify: {
-				self: center;
-			}
-
-			display: block;
-			height: 30px;
-			width: 30px;
-			color: var(--color-accent);
-
-			&:hover {
-				color: #3b5998;
-			}
-		}
-	}
-
-	.search {
-		place-self: center;
-		margin: 0 auto;
-		width: 100%;
-		text-align: center;
-
-		form {
-			display: inline-block;
-			position: relative;
-			border: 1px solid var(--color-gray-1);
-		}
-
-		label {
-			padding-right: 3em;
-		}
-
-		input {
-			@include font(18);
-			@include reset_min;
-			padding: var(--padding-small);
-
-			&[type=search] {
-				width: 300px;
-			}
-
-			&[type=submit] {
-				@include reset_min;
-				@include iconb('search.svg');
-				background-size: 70% auto;
 				display: block;
-				overflow: hidden;
-				text-indent: -999em;
-				width: 2em;
-				position: absolute;
-				right: 5px;
-				top: 0;
-				bottom: 0;
-				opacity: .5;
+				height: 30px;
+				width: 30px;
+				color: var(--color-accent);
 
 				&:hover {
-					opacity: 1;
+					color: #3b5998;
+				}
+			}
+		}
+
+		.search {
+			place-self: center;
+			margin: 0 auto;
+			width: 100%;
+			text-align: center;
+
+			form {
+				display: inline-block;
+				position: relative;
+				border: 1px solid var(--color-gray-1);
+			}
+
+			label {
+				padding-right: 3em;
+			}
+
+			input {
+				@include font(18);
+				@include reset_min;
+				padding: var(--padding-small);
+
+				&[type=search] {
+					width: 100%;
+
+					max: {
+						width: 300px;
+					}
+				}
+
+				&[type=submit] {
+					@include reset_min;
+					@include iconb('search.svg');
+					background-size: 70% auto;
+					display: block;
+					overflow: hidden;
+					text-indent: -999em;
+					width: 2em;
+					position: absolute;
+					right: 5px;
+					top: 0;
+					bottom: 0;
+					opacity: .5;
+
+					&:hover {
+						opacity: 1;
+					}
 				}
 			}
 		}
 	}
-}
 
-.site-title {
-	margin: 0;
-	@include logo_size;
-
-	background: {
-		repeat: no-repeat;
-		@include image('logo.png');
-		position: center;
-	}
-
-	span {
-		display: none;
-	}
-
-	a {
+	&-title {
+		margin: 0;
 		@include logo_size;
+
+		background: {
+			repeat: no-repeat;
+			@include image('logo.png');
+			position: center;
+		}
+
+		span {
+			display: none;
+		}
+
+		a {
+			@include logo_size;
+		}
 	}
 }
 
@@ -245,8 +263,8 @@
 
 			a {
 				padding: 10px;
+				color: var(--color-black);
 			}
-
 		}
 
 		button {

@@ -1,100 +1,116 @@
 @import '_mixin';
 
+body {
+	max-width: 100%;
+}
+
 #page,
 .wrapper,
 #masthead {
-    @include default_width_no_paddings;
+	@include default_width_no_paddings;
 }
 
 @media screen and (max-width: $width_m) {
-    .site {
-        grid-template-columns: 1fr;
-        grid-template-areas: "header" "main" "footer";
-        main {
-            padding: 0 var(--padding-small);
-        }
-    }
+	.site {
+		grid-template-columns: 1fr;
+		grid-template-areas: "header" "main" "sidebar" "footer";
+
+		main {
+			padding: 0 var(--padding-small);
+		}
+	}
 }
 
 .side-menu {
-    @media screen and (max-width: $width_m) {
-        display: none;
-    }
-    @include reset_ul;
-    background-color: var(--color-gray-3);
-    margin-right: var(--padding-default);
-    a {
-        display: block;
-        padding: var(--padding-small);
-        background: {
-            color: var(--color-gray-2);
-            repeat: no-repeat;
-            size: contain;
-            position: 50% 100%;
-        }
-        color: var(--color-white);
-        margin: 0;
-        &.has-post-thumbnail {
-            padding-bottom: calc( 1.6em + 105px );
-        }
-        &:hover {
-            background-color: var(--color-accent);
-            color: var(--color-white);
-        }
-    }
-    > {
-        li {
-            > {
-                a {
-                    &:visited {
-                        color: var(--color-white);
-                    }
-                }
-            }
-        }
-    }
-    ul {
-        @include reset_ul;
-        a {
-            background-color: transparent;
-            color: var(--color-primary);
-        }
-        .current-menu-item {
-            > {
-                a {
-                    color: var(--color-accent);
-                    &:hover {
-                        color: var(--color-white);
-                    }
-                }
-            }
-        }
-        &.level-2 {
-            a {
-                padding-left: 20px;
-            }
-        }
-        &.level-3 {
-            a {
-                padding-left: 30px;
-            }
-        }
-        &.level-4 {
-            a {
-                padding-left: 40px;
-            }
-        }
-        &.level-5 {
-            a {
-                padding-left: 50px;
-            }
-        }
-        &.level-6 {
-            a {
-                padding-left: 60px;
-            }
-        }
-    }
+	@include reset_ul;
+	background-color: var(--color-gray-3);
+	margin-right: var(--padding-default);
+
+	a {
+		display: block;
+		padding: var(--padding-small);
+
+		background: {
+			color: var(--color-gray-2);
+			repeat: no-repeat;
+			size: contain;
+			position: 50% 100%;
+		}
+
+		color: var(--color-white);
+		margin: 0;
+
+		&.has-post-thumbnail {
+			padding-bottom: calc(1.6em + 105px);
+		}
+
+		&:hover {
+			background-color: var(--color-accent);
+			color: var(--color-white);
+		}
+	}
+
+	> {
+		li {
+			> {
+				a {
+					&:visited {
+						color: var(--color-white);
+					}
+				}
+			}
+		}
+	}
+
+	ul {
+		@include reset_ul;
+
+		a {
+			background-color: transparent;
+			color: var(--color-primary);
+		}
+
+		.current-menu-item {
+			> {
+				a {
+					color: var(--color-accent);
+
+					&:hover {
+						color: var(--color-white);
+					}
+				}
+			}
+		}
+
+		&.level-2 {
+			a {
+				padding-left: 20px;
+			}
+		}
+
+		&.level-3 {
+			a {
+				padding-left: 30px;
+			}
+		}
+
+		&.level-4 {
+			a {
+				padding-left: 40px;
+			}
+		}
+
+		&.level-5 {
+			a {
+				padding-left: 50px;
+			}
+		}
+
+		&.level-6 {
+			a {
+				padding-left: 60px;
+			}
+		}
+	}
 
 }
-

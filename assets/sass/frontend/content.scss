@@ -66,9 +66,11 @@ body {
 
 	&.page {
 		#primary {
-			display: grid;
-			grid-template-columns: auto 160px;
-			gap: var(--padding-small);
+			@media screen and (min-width: #{$width_m +1px}) {
+				display: grid;
+				grid-template-columns: auto 160px;
+				gap: var(--padding-small);
+			}
 		}
 	}
 
